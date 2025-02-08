@@ -1,4 +1,6 @@
 import { Stack, Heading, AccordionRoot, AccordionItem, AccordionItemTrigger, Icon, AccordionItemContent } from "@chakra-ui/react";
+import { FaRegThumbsUp } from "react-icons/fa";
+import { IoPricetags } from "react-icons/io5";
 import { LuTags, LuChartBarStacked } from "react-icons/lu";
 
 
@@ -30,14 +32,14 @@ export const FAQ = () => {
   const items = [
     {
       value: "info",
-      icon: <LuTags />,
-      title: "Why Us",
+      icon: <FaRegThumbsUp />,
+      title: "Quality",
       content:
         "We offer the best bang for you buck Plumbing work in the locality",
     },
     {
       value: "Price",
-      icon: <LuChartBarStacked />,
+      icon: <IoPricetags />,
       title: "Price",
       content:
         "While it is difficult to give pricing for unseen Plumbing work, we do our best to give the best quality work for the least cost to you. Firstsly by not charging a service all fee!",

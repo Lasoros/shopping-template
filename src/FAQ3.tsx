@@ -1,5 +1,7 @@
 import { Stack, Heading, AccordionRoot, AccordionItem, AccordionItemTrigger, Icon, AccordionItemContent } from "@chakra-ui/react";
+import { IoIosWoman } from "react-icons/io";
 import { LuTags, LuChartBarStacked } from "react-icons/lu";
+import { MdOutlineMan, MdOutlineReviews } from "react-icons/md";
 
 
 
@@ -9,7 +11,7 @@ import { LuTags, LuChartBarStacked } from "react-icons/lu";
 export const FAQ3 = () => {
     return (
       <Stack width="full" maxW="400px">
-        <Heading size="md">Why Use Us?</Heading>
+        <Heading size="md">Don't Take Our Word For It!</Heading>
         <AccordionRoot collapsible defaultValue={[]}>
           {items.map((item) => (
             <AccordionItem key={item.value} value={item.value}>
@@ -30,17 +32,31 @@ export const FAQ3 = () => {
   const items = [
     {
       value: "info",
-      icon: <LuTags />,
-      title: "Why Us",
+      icon: <MdOutlineReviews />,
+      title: "Reviews",
       content:
-        "We offer the best bang for you buck Plumbing work in the locality",
+        "Below are some our most glowing reviews!",
     },
     {
       value: "Price",
-      icon: <LuChartBarStacked />,
-      title: "Price",
+      icon: <MdOutlineMan />,
+      title: "John Doe",
       content:
-        "While it is difficult to give pricing for unseen Plumbing work, we do our best to give the best quality work for the least cost to you. Firstsly by not charging a service all fee!",
+        "They came out fast and fixed my leaking shower in 30 minutes! The fact they don't have a service fee was an added bonus!",
+    },
+    {
+    value: "Price",
+    icon: <IoIosWoman />,
+    title: "Mary Joe",
+    content:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nemo laboriosam magni animi maxime molestiae consequuntur, eaque ullam temporibus vero minima perspiciatis quis iure fugit ducimus placeat odit saepe commodi',
+    },
+    {
+    value: "Price",
+    icon: <MdOutlineMan />,
+    title: "Joe Gatos",
+    content:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nemo laboriosam magni animi maxime molestiae consequuntur, eaque ullam temporibus vero minima perspiciatis quis iure fugit ducimus placeat odit saepe commodi',
     },
 ]
 

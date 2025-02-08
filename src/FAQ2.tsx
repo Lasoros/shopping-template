@@ -1,4 +1,6 @@
 import { Stack, Heading, AccordionRoot, AccordionItem, AccordionItemTrigger, Icon, AccordionItemContent } from "@chakra-ui/react";
+import { AiOutlineStop } from "react-icons/ai";
+import { IoPricetags } from "react-icons/io5";
 import { LuTags, LuChartBarStacked } from "react-icons/lu";
 
 
@@ -30,17 +32,17 @@ export const FAQ2 = () => {
   const items = [
     {
       value: "info",
-      icon: <LuTags />,
-      title: "Why Us",
+      icon: <AiOutlineStop />,
+      title: "No Service Fee",
       content:
-        "We offer the best bang for you buck Plumbing work in the locality",
+        "We have a $0 service fee, this allows every dollar to go toward the fix if needed!",
     },
     {
       value: "Price",
-      icon: <LuChartBarStacked />,
-      title: "Price",
+      icon: <IoPricetags />,
+      title: "Emergency Call Fee",
       content:
-        "While it is difficult to give pricing for unseen Plumbing work, we do our best to give the best quality work for the least cost to you. Firstsly by not charging a service all fee!",
+        "We have a small fee for emergency visits of, $50",
     },
 ]
 
