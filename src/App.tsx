@@ -6,13 +6,16 @@ import PageDraw from './Drawer';
 import FAQ2 from './FAQ2';
 import FAQ3 from './FAQ3';
 import FAQ from './FAQ';
+import Call from './Call';
 
 function App() {
 
   const gridTemplateColumns = useBreakpointValue({
     base: "1fr",
-    sm: "1fr 1fr",
-    md: "1fr 1fr 1fr",
+    sm: "1fr",
+    md: "1fr 1fr",
+    lg: "1fr 1fr 1fr",
+
   });
 
   const products = [
@@ -25,91 +28,103 @@ function App() {
 
   return (
     <>
-      <Box>
 
-        <Flex direction="column" align="center" bg="gray.50" p={5}>
 
-          <header>
-            <div className="head">
-              <Container width={'100vw'} >
-                <HStack padding={12} justifyContent={'space-around'}>
-                  <Box boxSize={50} background={'transparent'} >
-                    <Image src='src/assets/sheildlogo.jpg'></Image>
-                  </Box>
-                  {/* <Box>
-                    <Bleed>
+        <Box>
 
-                    <PageDraw></PageDraw>
-                    </Bleed>
-                  </Box> */}
-                  <Box>
+          <Flex direction="column" align="center" bg="gray.50" p={5} >
+            
+            <header>
+              <div className="head">
+                <Container >
+                  <HStack padding={12} justifyContent={'center'}>
+                    <Box boxSize={50} background={'transparent'} >
+                      <Image src='src/assets/sheildlogo.jpg'></Image>
+                    </Box>
+                    {/* <Box>
+                      <Bleed>
+                      
+                      <PageDraw></PageDraw>
+                      </Bleed>
+                      </Box> */}
+                    <Box>
+                      
+                    <Input placeholder='Search' colorPalette={'gray'}></Input>
+                    </Box>
+
                     
-                  <Input placeholder='Search' colorPalette={'gray'} width={650} minWidth={'auto'} maxW={700}></Input>
-                  </Box>
 
-                  
+                  </HStack>
 
-                </HStack>
+                  <Separator paddingBottom={15}></Separator>
 
-                <Separator paddingBottom={15}></Separator>
+                </Container>
+
+
+              </div>
+            </header>
+
+
+            <main>
+
+              <Container>
+                <Box boxSize={'contain'}>
+                  <Image src='src/assets/plumbinghero.jpg' borderRadius={25}>
+                  </Image>
+
+
+                  {/* <Separator paddingBottom={15}></Separator> */}
+                </Box>
+
+                
+                <Box>
+                  <HStack justifyContent={'center'} padding={35} alignItems={'baseline'}>
+                    <FAQ></FAQ>
+                    <FAQ2></FAQ2>
+                    <FAQ3></FAQ3>
+                  </HStack>
+
+                  <Separator padding={35}></Separator>
+
+                </Box>
+
+                {/* <Separator paddingBottom={15}></Separator> */}
+
+                <Box>
+                  <Items></Items>
+  
+                </Box>
+
+
 
               </Container>
 
-
-            </div>
-          </header>
-
-
-          <main>
-
-            <Container>
-              <Box height={850} width={'auto'}>
-                <Image src='src/assets/plumbinghero.jpg' borderRadius={25}></Image>
-
-                {/* <Separator paddingBottom={15}></Separator> */}
-              </Box>
-
               
-              <Box>
-                <HStack justifyContent={'center'} padding={35}>
-                  <FAQ></FAQ>
-                  <FAQ2></FAQ2>
-                  <FAQ3></FAQ3>
-                </HStack>
+            
 
-                <Separator padding={35}></Separator>
+            </main>
 
-              </Box>
 
-              {/* <Separator paddingBottom={15}></Separator> */}
+
+            <footer>
+              <Container>
 
               <Box>
-                <Items></Items>
+                  <Call></Call>
               </Box>
 
-            </Container>
+              </Container>
+            </footer>
+
+  
+
+
 
             
-           
+          </Flex>
 
-          </main>
+        </Box>
 
-
-
-          <footer>
-            <Container width={'100vw'}>
-
-            </Container>
-          </footer>
-
- 
-
-
-
-          
-        </Flex>
-
-      </Box>
 
  
     </>

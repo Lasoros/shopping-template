@@ -49,14 +49,14 @@ export const FAQ3 = () => {
     icon: <IoIosWoman />,
     title: "Mary Joe",
     content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nemo laboriosam magni animi maxime molestiae consequuntur, eaque ullam temporibus vero minima perspiciatis quis iure fugit ducimus placeat odit saepe commodi',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nemo laboriosam magni animi maxime molestiae consequuntur',
     },
     {
     value: "Price",
     icon: <MdOutlineMan />,
     title: "Joe Gatos",
     content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nemo laboriosam magni animi maxime molestiae consequuntur, eaque ullam temporibus vero minima perspiciatis quis iure fugit ducimus placeat odit saepe commodi',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nemo laboriosam magni animi maxime molestiae consequuntur',
     },
 ]
 
