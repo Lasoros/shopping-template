@@ -1,7 +1,6 @@
 import { Stack, Heading, AccordionRoot, AccordionItem, AccordionItemTrigger, Icon, AccordionItemContent } from "@chakra-ui/react";
 import { FaRegThumbsUp } from "react-icons/fa";
 import { IoPricetags } from "react-icons/io5";
-import { LuTags, LuChartBarStacked } from "react-icons/lu";
 
 
 

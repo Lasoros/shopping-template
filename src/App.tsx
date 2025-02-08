@@ -1,7 +1,6 @@
 import './App.css'
-import { Box, Container, Input , Image, Button, Flex, Grid, GridItem, Heading, useBreakpointValue, HStack, Text, Separator, Bleed, Center} from '@chakra-ui/react'
+import { Box, Container, Input , Image, Flex, HStack, Separator} from '@chakra-ui/react'
 import Items from './Items';
-import PageDraw from './Drawer';
 
 import FAQ2 from './FAQ2';
 import FAQ3 from './FAQ3';
@@ -10,21 +9,7 @@ import Call from './Call';
 
 function App() {
 
-  const gridTemplateColumns = useBreakpointValue({
-    base: "1fr",
-    sm: "1fr",
-    md: "1fr 1fr",
-    lg: "1fr 1fr 1fr",
 
-  });
-
-  const products = [
-    { id: 1, name: "Nourison 23", price: "৳ 600.0", originalPrice: "৳ 870.0", imgUrl: "image1.jpg" },
-    { id: 2, name: "Single Pendant", price: "৳ 4200.0", originalPrice: "৳ 5999.0", imgUrl: "image2.jpg" },
-    { id: 3, name: "Light Drum Pendant", price: "৳ 2567.0", imgUrl: "image3.jpg" },
-    { id: 4, name: "Silk Drum Lamp Shade", price: "৳ 3200.0", originalPrice: "৳ 3200.0", imgUrl: "image4.jpg" },
-    // Add more products as needed
-  ];
 
   return (
     <>

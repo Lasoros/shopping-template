@@ -1,7 +1,6 @@
 import { Stack, Heading, AccordionRoot, AccordionItem, AccordionItemTrigger, Icon, AccordionItemContent } from "@chakra-ui/react";
 import { AiOutlineStop } from "react-icons/ai";
 import { IoPricetags } from "react-icons/io5";
-import { LuTags, LuChartBarStacked } from "react-icons/lu";
 
 
 

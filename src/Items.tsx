@@ -1,10 +1,7 @@
-import { Image, Box, Button, Card, Grid, PopoverArrow, PopoverBody, PopoverContent, PopoverRoot, PopoverTrigger } from "@chakra-ui/react"
-import { useState } from "react";
-import Call from "./Call";
+import { Image, Box, Button, Card, Grid } from "@chakra-ui/react"
 
 export const Items = () => {
 
-    const [open, setOpen] = useState(false)
 
   return (
 
